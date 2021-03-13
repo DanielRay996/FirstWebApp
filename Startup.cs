@@ -26,6 +26,10 @@ namespace WebApp1
                 app.UseDeveloperExceptionPage();
             }
 
+            if(env.IsEnvironment("Production")){
+                app.UseHttpsRedirection();
+            }
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
