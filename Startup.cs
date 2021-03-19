@@ -30,7 +30,7 @@ namespace WebApp1
             }
 
             app.UseMvc(routeBuilder => {
-                    routeBuilder.MapRoute("default", "{controller}/{action}/{id}");
+                    routeBuilder.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

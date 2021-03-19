@@ -6,7 +6,7 @@ namespace WebApp1.Controllers
     {
         public IActionResult Index()
         {
-                return Content("Sono index");
+                return View();
         }
 
         public IActionResult Detail(string id){
