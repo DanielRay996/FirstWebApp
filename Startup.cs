@@ -29,6 +29,8 @@ namespace WebApp1
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseStaticFiles();
+
             app.UseMvc(routeBuilder => {
                     routeBuilder.MapRoute("default", "{controller=Home}/{action=Index}/{id?}");
             });
